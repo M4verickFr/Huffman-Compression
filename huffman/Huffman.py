@@ -10,5 +10,6 @@ class Huffman():
       self.compress(text)
 
    def compress(self, text):
+      print(text)
       pass
 
