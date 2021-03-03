@@ -3,7 +3,9 @@
 """
 class Huffman():
    def compressFile(self, path):
-      pass
+      file = File(path)
+      text = file.read()
+      self.compress(text)
 
    def compress(self, text):
       pass
