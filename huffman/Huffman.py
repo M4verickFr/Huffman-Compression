@@ -14,7 +14,9 @@ class Huffman():
       frequency = self.make_frequency(text)
       root_node = self.make_tree(frequency)
       encodage_table = self.make_encodage_table(root_node)
-      print(encodage_table)
+      compressedText = "".join([encodage_table[char] for char in text])
+      print(f"encodage table : {encodage_table}")
+      print(f"compressedText : {compressedText}")
 
    def make_frequency(self, text):
       frequency = {}
