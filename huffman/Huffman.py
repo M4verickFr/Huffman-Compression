@@ -1,3 +1,5 @@
+from .File import File
+
 """class to encode data into smaller bits according to their 
    frequinces of occurance.
 """
