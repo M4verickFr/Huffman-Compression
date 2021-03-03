@@ -35,7 +35,7 @@ h.compress("Bonjour!!")
 h.compressFile(pathFile)
 ```
 
-You can find usage exemple in folder test.
+For examples of use, see the test folder.
 
 ## Todo
 
