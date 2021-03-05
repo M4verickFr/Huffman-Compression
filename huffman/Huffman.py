@@ -1,5 +1,5 @@
 from .File import File
-from .Tree import Node
+from .Node import Node
 
 """class to encode data into smaller bits according to their 
    frequinces of occurance.
