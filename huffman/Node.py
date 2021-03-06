@@ -6,6 +6,12 @@ class Node():
 		self.weight = weight
 
 	def setChildren(self, left_node, right_node):
+		"""Define children of Node
+
+		Args:
+			left_node (Node): [description]
+			right_node (Node): [description]
+		"""
 		self.left = left_node
 		self.right = right_node
 
