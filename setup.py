@@ -9,13 +9,13 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='huffman-encode',
+    name='huffman-project',
     version='0.1.0',
-    description='huffman-encoder package to reduce data based on character frequency',
+    description='huffman-project package to reduce data based on character frequency',
     long_description=readme,
     author='Maverick Perrollaz',
     author_email='maverick.perrollaz@pm.me',
-    url='https://github.com/M4verickFr/huffman-encode',
+    url='https://github.com/M4verickFr/huffman-project',
     license=license,
     packages=find_packages()
 )

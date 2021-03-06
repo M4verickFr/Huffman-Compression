@@ -1,4 +1,4 @@
-# huffman-encode
+# huffman-project
 A python package to compress data based on character frequency
 
 This repository contains files for huffman package and test files for it in `tests/` directory.
