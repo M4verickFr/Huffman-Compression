@@ -13,6 +13,11 @@ class Tree():
             list_nodes.append(parent_node)
 
         self.root = list_nodes[0]
+    
+    """Get root Node of Tree
 
+    Returns:
+        Node: root node
+    """
     def get_root(self):
         return self.root

@@ -1,4 +1,6 @@
 class Node():
+	"""A node is an element with up to 2 children, a leaf has one character.
+	"""
 	def __init__(self, weight, char=None):
 		self.left = None
 		self.right = None

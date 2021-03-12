@@ -1,14 +1,27 @@
 import os
 
 class File():
+	"""Class to read / write files
+	"""
 	def __init__(self, path):
 		self.path = path
 
 	def read(self):
+		"""Read file
+
+		Returns:
+			str: return text from the film
+		"""
 		with open(self.path) as file:
 			return file.read()
 
 	def export(self, frequency, compressedText):
+		"""Exports frequency and compressed text
+
+		Args:
+			frequency (dict): frequency of each characters in initial text
+			compressedText (str): compressed text
+		"""
 		dir = os.path.dirname(self.path)
 		basename = os.path.splitext(os.path.basename(self.path))[0]
 
