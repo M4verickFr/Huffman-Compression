@@ -8,13 +8,13 @@ from .HuffmanInterface import HuffmanInterface
 class Huffman(HuffmanInterface):
    """Encode data into smaller bits according to their frequencies of occurance.
    """
-   def compressFile(self, path:str):
+   def compressFile(self, path:str) -> dict:
       """Overrides HuffmanInterface.compressFile()
 
       Args:
           path (str): path of the file to compress
 
-      Returns:
+      Returns dict: 
           Frequency: Frequency of characters in file
           Str: Binary text of the compressed file
           Float: Percentage reduction
@@ -22,17 +22,17 @@ class Huffman(HuffmanInterface):
       """
       file = File(path)
       text = file.read()
-      frequency, compressedText, ratio, averageBitsForChar = self.compress(text)
-      file.export(frequency, compressedText)
-      return frequency, compressedText, ratio, averageBitsForChar
+      compressedData = self.compress(text)
+      file.export(compressedData['frequency'], compressedData['compressedText'])
+      return compressedData
 
-   def compress(self, text:str):
+   def compress(self, text:str) -> dict:
       """Overrides HuffmanInterface.compress()
 
       Args:
           text (str): text to compress
 
-      Returns:
+      Returns dict:
           Frequency: Frequency of characters in file
           Str: Binary text of the compressed file
           Float: Percentage reduction
@@ -43,4 +43,4 @@ class Huffman(HuffmanInterface):
       encodage = Encodage(tree.get_root())
       compressedText = "".join([encodage.get_table()[char] for char in text]).encode()
       ratio = Ratio(frequency.get_freq(), encodage.get_table())
-      return frequency.get_freq(), compressedText, ratio.getRatio(), ratio.getAveragageBitsForChar()
+      return {'frequency': frequency.get_freq(), 'compressedText': compressedText, 'ratio': ratio.getRatio(), 'averageBitsForChar': ratio.getAveragageBitsForChar()}

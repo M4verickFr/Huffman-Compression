@@ -1,5 +1,5 @@
 class HuffmanInterface:
-    def compressFile(self, path:str):
+    def compressFile(self, path:str) -> dict:
         """Compress the file provided in parameter. 
 
         Args:
@@ -7,7 +7,7 @@ class HuffmanInterface:
         """
         pass
 
-    def compress(self, text:str):
+    def compress(self, text:str) -> dict:
         """Compress the text provided in parameter
 
         Args:
