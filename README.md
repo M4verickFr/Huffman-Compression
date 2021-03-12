@@ -18,6 +18,17 @@ pip3 install -r requirements.txt
 pip3 install huffman-project
 ```
 
+## Unit Test Case
+
+You can run Unit Test Case with
+
+```bash
+python3 -m unittest tests/HuffmanTestCase.py
+python3 -m unittest tests/TreeTestCase.py
+```
+
+All tests must be passed
+
 ## Usage
 
 Import huffman package.
@@ -36,13 +47,6 @@ h.compressFile(pathFile)
 ```
 
 For examples of use, see the test folder.
-
-## Todo
-
-- Export to binary file
-- Comment code
-- Determine compression rate
-- Average number of storage bits of a character
 
 ## License
 
