@@ -3,12 +3,27 @@ A python package to compress data based on character frequency
 
 This repository contains files for huffman package and test files for it in `tests/` directory.
 
-## Production Installation
+## Installation instructions
 
 Clone the repo:
 
 ```bash
 pip3 install huffman-project
+```
+
+## Installation instructions (dev)
+
+Clone the repo:
+
+```bash
+git clone git@github.com:M4verickFr/huffman-project.git
+```
+
+Then install the dependencies and install the package:
+
+```bash
+pip3 install -r requirements.txt
+pip3 install -e . 
 ```
 
 ## Usage
@@ -29,21 +44,6 @@ h.compressFile(pathFile)
 ```
 
 For examples of use, see the test folder.
-
-## Development Installation
-
-Clone the repo:
-
-```bash
-git clone git@github.com:M4verickFr/huffman-project.git
-```
-
-Then install the dependencies and install the package:
-
-```bash
-pip3 install -r requirements.txt
-pip3 install -e . 
-```
 
 ## Unit Test Case
 
