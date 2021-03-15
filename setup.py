@@ -10,7 +10,7 @@ with open('LICENSE') as f:
 
 setup(
     name='huffman-project',
-    version='0.2.0',
+    version='0.2.1',
     description='huffman-project package to reduce data based on character frequency',
     long_description=readme,
     long_description_content_type='text/markdown',
