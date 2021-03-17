@@ -1,6 +1,7 @@
 # huffman-project
 
-This project is to produce a Python package to compress data with the Huffman Algortitmn
+This project is to produce a Python package to compress data with the Huffman Algortitmn.
+
 It reads frequent characters from input file and replace it with shorter binary codeword.
 
 ## Installation instructions
